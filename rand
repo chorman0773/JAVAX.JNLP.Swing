@@ -1,0 +1,35 @@
+import javax.swing.*;
+import javax.jnlp.*;
+import javax.swing.text.*;
+public class rand{
+private static class inst{
+
+inst(String s){
+
+
+}
+
+}
+
+public static final inst instance(Object to){
+
+if(to instanceOf String){
+
+s=(String) to;
+
+}
+else if(to instaceOf JTextCommponent){
+if(to instaceOf JPasswordField)
+s=new String(((JPasswordField)to).getPassword());
+else
+s = ((JTextCommponent)to).getText();
+
+}
+else
+s = to.toString();
+return new inst(s);
+}
+
+
+
+}
